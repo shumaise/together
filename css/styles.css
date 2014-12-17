@@ -27,7 +27,7 @@ a, a:hover {
 	width: 100%
 }
 .blue-color {
-	background:rgb(13, 180, 233)
+	background: rgb(13, 180, 233)
 }
 .navbar {
 	min-height: 75px
@@ -106,7 +106,7 @@ a, a:hover {
 	-webkit-text-stroke: 0.1px;
 	letter-spacing: 1px
 }
-.icon-bar {
+.icon-bar-1 {
 	padding: 25px;
 	height: 100px;
 	width: 100px;
@@ -114,10 +114,21 @@ a, a:hover {
 	background: yellow;
 	text-align: center;
 }
-.lead {
-	margin-top:10px
+.icon-bar-2 {
+	padding: 42px;
+	height: 150px;
+	width: 150px;
+	border-radius: 100px;
+	background: yellow;
+	color: black;
+	text-align: center;
 }
-
+.lead {
+	margin-top: 10px
+}
+#services .section-title, #services .section-head, #services .section-description, #services h2 {
+	color: white;
+}
 /*
  Fade content carousel with hero headers
  */
@@ -271,5 +282,14 @@ a, a:hover {
 	}
 	.section-description {
 		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	#about .section-content {
+		text-align: center
+	}
+	#about .icon-bar-1 {
+		margin: 0 auto;
 	}
 }
