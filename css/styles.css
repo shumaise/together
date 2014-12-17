@@ -3,6 +3,7 @@ html, body {
 	width: 100%;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	position: relative;
 }
 body {
 	font-size: 1.7em;
@@ -12,18 +13,34 @@ p {
 	font-family: "Lato", arial, sans-serif;
 	line-height: 1.8em;
 }
+a, a:hover {
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
 .affix-top {
 	background: transparent;
 }
 .affix {
-	background: red;
+	background: #F7760A;
 	width: 100%
 }
+.blue-color {
+	background:rgb(13, 180, 233)
+}
+.navbar {
+	min-height: 75px
+}
 .nav {
-	padding-top: 5px
+	padding-top: 13px
 }
 .nav a {
 	color: #FFFFFF;
+}
+.nav li a:hover, .nav li a:focus, .nav li a:active, .nav li a:focus {
+	color: black;
+	background: transparent;
 }
 .nav .btn-success {
 	margin: 10px 0;
@@ -32,6 +49,75 @@ p {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+.nav .btn-success:hover {
+	background-color: #40B59E;
+	border-color: #40B59E;
+}
+.navbar-brand span {
+	margin-left: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #761E36;
+}
+.navbar-brand > img {
+	display: inline-block;
+}
+
+.section-padding {
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+.section-head {
+	margin-top: 0px;
+	margin-bottom: 100px;
+}
+.section-title {
+	color: #0d0d0d;
+	font-size: 3.4375em;
+	font-weight: 900;
+	line-height: 54px;
+	text-align: right;
+	text-transform: uppercase;
+	width: 320px;
+	float: left;
+	margin: 0;
+	padding-top: 4px;
+	padding-right: 35px;
+	position: relative;
+	-webkit-text-stroke: 0.3px;
+}
+.section-title:after {
+	position: absolute;
+	width: 20px;
+	height: 43px;
+	background-color: #f39c12;
+	content: "";
+	top: 7px;
+	right: 0px;
+	margin-left: 0px;
+}
+.section-description {
+	color: #404040;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 25px;
+	margin-left: 340px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke: 0.1px;
+	letter-spacing: 1px
+}
+.icon-bar {
+	padding: 25px;
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	background: yellow;
+	text-align: center;
+}
+.lead {
+	margin-top:10px
+}
+
 /*
  Fade content carousel with hero headers
  */
@@ -98,6 +184,9 @@ p {
 	-o-transition: 2s all ease-in-out .1s;
 	transition: 2s all ease-in-out .1s;
 }
+/********************************/
+/*           Animate            */
+/********************************/
 
 /********************************/
 /*            Overlay           */
@@ -163,5 +252,24 @@ p {
 @media screen and (max-width: 640px) {
 	.hero h1 {
 		font-size: 4em;
+	}
+}
+@media screen and (max-width: 768px) {
+	.section-title {
+		text-align: left;
+		float: none;
+		width: inherit;
+		display: inline-block;
+		padding-right: 0px;
+		padding-bottom: 30px;
+	}
+	.section-title:after {
+		width: 100%;
+		height: 10px;
+		top: inherit;
+		bottom: 20px;
+	}
+	.section-description {
+		margin-left: 0;
 	}
 }

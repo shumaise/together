@@ -1,3 +1,3 @@
 # Together v1 beta
 
-	Open Source Responsive Template For NGO's
+	Open Source Responsive Template For Non Profit Organisation
