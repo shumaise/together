@@ -29,6 +29,9 @@ a, a:hover {
 .blue-color {
 	background: rgb(13, 180, 233)
 }
+.green-color {
+	background: #82b440;
+}
 .navbar {
 	min-height: 75px
 }
@@ -128,6 +131,74 @@ a, a:hover {
 }
 #services .section-title, #services .section-head, #services .section-description, #services h2 {
 	color: white;
+}
+#contact .section-title, #contact .section-head, #contact .section-description, #contact h2, #contact p {
+	color: white;
+}
+
+.gallery {
+	display: inline-block;
+	margin-top: 20px;
+}
+.content-title {
+	color: #0d0d0d;
+	font-size: 1.375em;
+	font-weight: 800;
+	line-height: 1em;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+.contact-info .content-description {
+	color: #737373;
+	font-weight: 400;
+}
+.contact-info ul {
+margin-left:-40px;
+}
+.contact-info .contact-address li {
+	list-style: none;
+	position: relative;
+	padding-left: 50px;
+	line-height: 40px;
+	color: #0d0d0d;
+	font-weight: 600;
+	margin: 5px 0;
+}
+.contact-info .contact-address li:before {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	background: yellow;
+	font-family: 'FontAwesome';
+	font-style: normal;
+	font-size: 18px;
+	speak: none;
+	font-weight: normal;
+	line-height: 33px;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding:2px;
+}
+.footer-section {
+padding: 40px 0px;
+}
+.footer-social-btn a {
+color: #0d0d0d;
+margin: 5px;
+-webkit-transition: all .25s linear;
+-moz-transition: all .25s linear;
+-ms-transition: all .25s linear;
+-o-transition: all .25s linear;
+transition: all .25s linear;
+}
+.footer-text a {
+color: #0d0d0d;
+font-weight: 600;
+-webkit-text-stroke: 0.1px;
 }
 /*
  Fade content carousel with hero headers
